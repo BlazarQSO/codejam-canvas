@@ -3,8 +3,39 @@
 <head>
     <title></title>
 	<meta charset="utf-8" />
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-
+    <div class="wrapper">
+        <section class="pallete">
+            <button type="button" id="btn_pallete" class="pallete--btn_pallete"></button>
+            <h1 class="pallete--title">CodeJam - Pallete</h1>
+            <button type="button" id="btn_settings" class="pallete--btn_settings"></button>
+        </section>
+        <main class="main">
+            <aside class="main--tools">
+                <div class="main--tools-actions">
+                    <button type="button" class="main--tools-actions-paint">Paint buchet</button>
+                    <button type="button" class="main--tools-actions-choose">Choose color</button>
+                    <hr />
+                    <button type="button" class="main--tools-actions-move">Move</button>
+                    <button type="button" class="main--tools-actions-transform">Transform</button>
+                </div>
+                <div class="main--tools-color">
+                    <button type="button" class="main--tools-color-current">Current color</button>
+                    <button type="button" class="main--tools-color-prev">Prev color</button>
+                    <hr />
+                    <button type="button" class="main--tools-color-red">red</button>
+                    <button type="button" class="main--tools-color-blue">blue</button>
+                </div>  
+            </aside>
+            <figure class="main--view">
+                <canvas class="main--view-canvas" id="canvas" width="512" height="512">
+                    Bad Luck, It seems your browser won't support :(
+                </canvas>
+            </figure>
+        </main>
+    </div>
 </body>
 </html>
