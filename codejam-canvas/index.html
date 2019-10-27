@@ -6,7 +6,7 @@
     <script src="script.js"></script>
     <link href="style.css" rel="stylesheet" />
 </head>
-<body>
+<body class="body">
     <div class="wrapper">
         <section class="pallete">
             <button type="button" id="btn_pallete" class="pallete--btn_pallete"></button>
@@ -23,11 +23,19 @@
                     <button type="button" class="main--tools-actions-transform">Transform</button>
                 </div>
                 <div class="main--tools-color">
-                    <button type="button" class="main--tools-color-current">Current color</button>
-                    <button type="button" class="main--tools-color-prev">Prev color</button>
+                    <button type="button" class="main--tools-color-current">
+                        <span id="current_clr"></span><span>Current color</span>
+                    </button>
+                    <button type="button" class="main--tools-color-prev">
+                        <span id="current_clr"></span><span>Prev color</span>
+                    </button>
                     <hr />
-                    <button type="button" class="main--tools-color-red">red</button>
-                    <button type="button" class="main--tools-color-blue">blue</button>
+                    <button type="button" class="main--tools-color-red">
+                        <span id="current_clr"></span><span>red</span>
+                    </button>
+                    <button type="button" class="main--tools-color-blue">
+                        <span id="current_clr"></span><span>blue</span>
+                    </button>
                 </div>  
             </aside>
             <figure class="main--view">
@@ -36,12 +44,18 @@
                 </canvas>
             </figure>
             <aside class="main--switch">
-                <input type="radio" name="radio1" id="r_first" class="main--switch-r_first">
-                <label for="r_first" class="main--switch-l_first">4x4</label>
-                <input type="radio" name="radio1" id="r_second" class="main--switch-r_second">
-                <label for="r_second" class="main--switch-l_second">32x32</label>
-                <input type="radio" name="radio1" id="r_third" class="main--switch-r_third">
-                <label for="r_third" class="main--switch-l_third">256x256</label>
+                <div>
+                    <input type="radio" name="radio1" id="r_first" class="main--switch-r_first">
+                    <label for="r_first" class="main--switch-l_first">4x4</label>
+                </div>
+                <div>
+                    <input type="radio" name="radio1" id="r_second" class="main--switch-r_second">
+                    <label for="r_second" class="main--switch-l_second">32x32</label>
+                </div>
+                <div>
+                    <input type="radio" name="radio1" id="r_third" class="main--switch-r_third">
+                    <label for="r_third" class="main--switch-l_third">256x256</label>
+                </div>
             </aside>
         </main>
     </div>
