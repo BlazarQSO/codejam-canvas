@@ -1,6 +1,6 @@
 ﻿.body {
     background-color: bisque;
-    margin: 0;    
+    margin: 0;
 }
 
 .wrapper {
@@ -18,7 +18,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.pallete--btn_pallete, 
+.pallete--btn_pallete,
 .pallete--btn_settings {
     border: 0;
     padding: 0;
@@ -27,13 +27,16 @@
     background-color: white;
     background-image: url(./assets/icon/lines.png);
     background-repeat: no-repeat;
-    background-position: center center;    
+    background-position: center center;
+    cursor: pointer;
 }
+
 .pallete--btn_pallete {
     margin-left: 5px;
 }
+
 .pallete--btn_settings {
-    background-image: url(./assets/icon/circles.png);    
+    background-image: url(./assets/icon/circles.png);
 }
 
 .pallete--title {
@@ -43,13 +46,14 @@
 }
 
 .main {
-    display: flex;    
+    display: flex;
     justify-content: space-between;
-    width: 100%;    
+    width: 100%;
 }
 
-.main--tools hr{
-    border: 1px solid rgba(0, 0, 0, 0.12);
+.main--tools hr {
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .main--tools-color,
@@ -65,47 +69,51 @@
 }
 
 .main--tools button {
-    border: 0;    
+    border: 0;
     background-repeat: no-repeat;
     background-position: left 20px center;
     width: 200px;
     height: 50px;
     text-align: start;
-    padding-left: 70px;    
+    padding-left: 70px;
     margin-left: 15px;
     margin-top: 5px;
     display: flex;
     align-items: center;
+    cursor: pointer;
     outline: none;
 }
 
-.main--tools button:hover {
-    background-color: gold;
-}
+    .main--tools button:hover {
+        background-color: gold;
+    }
 
 .main--tools-actions-paint {
     background-image: url(./assets/icon/paint.png);
 }
+
 .main--tools-actions-choose {
     background-image: url(./assets/icon/choose.png);
 }
+
 .main--tools-actions-move {
     background-image: url(./assets/icon/move.png);
 }
+
 .main--tools-actions-transform {
     background-image: url(./assets/icon/transform.png);
 }
 
-.main--tools-color-current span:first-child, 
-.main--tools-color-prev span:first-child, 
-.main--tools-color-red span:first-child, 
+.main--tools-color-current span:first-child,
+.main--tools-color-prev span:first-child,
+.main--tools-color-red span:first-child,
 .main--tools-color-blue span:first-child {
     display: inline-block;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     margin-left: -50px;
-    border: 1px solid black;    
+    border: 1px solid black;
 }
 
 .main--tools-color-current span:first-child {
@@ -117,7 +125,7 @@
 }
 
 .main--tools-color-red span:first-child {
-    background-color: red
+    background-color: red;
 }
 
 .main--tools-color-blue span:first-child {
@@ -136,34 +144,41 @@
     margin-right: 20px;
 }
 
-.main--switch div {
-    width: 230px;
-}
+    .main--switch div {
+        width: 230px;
+    }
 
-.main--switch label {
-    margin-top: 30px;
-    font-size: 20px;
-    display: inline-block;
-    text-align: center; 
-    width: 180px;
-    background-color: antiquewhite;
-}
+    .main--switch label {
+        margin-top: 30px;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+        width: 180px;
+        background-color: antiquewhite;
+        cursor: pointer;
+    }
 
-.main--switch label:hover {
-    background-color: gold;
-}
+        .main--switch label:hover {
+            background-color: gold;
+        }
 
-.main--switch [type="radio"] {
-    width: 30px;    
-    outline: none;    
-}
+    .main--switch [type="radio"] {
+        width: 30px;
+        cursor: pointer;
+        outline: none;
+    }
 
-.main--view {    
+.main--view {
     margin: 0;
 }
 
 .main--view-canvas {
-    outline: 1px solid green;
+    outline: 1px solid #C4C4C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 50px;
+    width: 512px;
+    height: 512px;
+    image-rendering: pixelated;
 }
+
 
